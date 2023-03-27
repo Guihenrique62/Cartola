@@ -13,27 +13,35 @@ createDelBtn.id = 'delBtn'
 createDelBtn.innerText = '-'
 
 
+
 //Cria botão Del
 playerEsc.forEach(player => {
-    player.addEventListener('mouseover', ()=>{
+    player.addEventListener('mouseenter', ()=>{
         player.append(createDelBtn)
         const delBtn = document.getElementById('delBtn')
         delBtn.addEventListener('click',()=>{
-            console.log('teste')
+            
         })
+    })
+    player.addEventListener('mouseleave', ()=>{
+        player.removeChild(createDelBtn)
     })
 });
 
   //Cria botão Add
 playerDisp.forEach(player => {
-    player.addEventListener('mouseover', ()=>{
+    player.addEventListener('mouseenter', ()=>{
         player.append(createAddBtn)
+        const addBtn = document.getElementById('addBtn')
+        addBtn.addEventListener('click',()=>{
+            console.log('teste')
+        })
     })
-    player.addEventListener('mouseout', ()=>{
+    player.addEventListener('mouseleave', ()=>{
         player.removeChild(createAddBtn)
     })
 });
-
+ 
 
 
 /*
