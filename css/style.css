@@ -1,5 +1,5 @@
 div#top{
-    background-color: rgb(255, 255, 255);;
+    background-color: rgb(209, 209, 209);
     padding: -5%;
     justify-content: center;
     width: 46%;
@@ -9,83 +9,53 @@ div#top{
     border-top-left-radius: 15px;
 }
 div#front{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(209, 209, 209);
     box-shadow: 10px 10px 30px  rgba(0, 0, 0, 0.836);
     border-radius: 9px;
-    width: 100%;
-    height: 520px;
+    width: 90% max-content 80% min-content;
+    height: 510px;
     display: flex;
     margin: auto;
-    justify-content: space-around, justify;
-    
+    justify-content: center space-between space-around ;
 }
-
+button{
+    width:100%;
+    padding: 10px;
+    height: 0%;
+    font-size: medium;
+}
 body{
-    background-image: url(../images/heartbal.png);
-    background-attachment: cover;
+    height: 100vh;
+    background-image: url(bola-de-futebol-de-campo-de-futebol-na-grama-verde_34263-97.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Verdana;
-    font-weight: 100;
+}
+ul#list1{
+    font-size: 100%;
+    background-color: rgba(77, 76, 76, 0.438);
+    font-weight: 100px;
+    padding: 5%;
+    margin: auto;
+    list-style: none;
+
+}
+ul#list2{
+    font-size: 100%;
+    background-color: rgba(77, 76, 76, 0.438);
+    font-weight: 100px;
+    padding: 5%;
+    margin: auto;
+    justify-content: last baseline;
+    list-style: none;
+    /*float: left;*/
 }
 .butt{
-    display: flex;
-    height: 40px;
-    justify-content: space-between;
-}
-.addBtn{
-    width: 30px;
-    height: 30px;
-    font-size: 1.5em;
-    text-align: center;
-    background-color: green;
-    border-radius: 15px;
-    border: none;
-    margin-top: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    
-}
-
-.delBtn{
-    width: 30px;
-    height: 30px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    background-color: rgba(168, 13, 13, 0.973);
-    border-radius: 15px;
-    border: none;
-    margin-top: 5px;
-    cursor: pointer;
-    color: white;
-    
-}
-.spans{
+    margin: -1%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    padding: 0px 30px 0px 30px;
-    justify-content: space-between;
-    border: 1px solid rgba(170, 170, 170, 0.377);
+    
 }
-.spans > p{
-    align-self: center;
-}
-
-
-.lists{
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-.spans:hover{
-    background-color: rgb(214, 214, 214);
-}
-
 /*div{
     padding: 10px;
     margin: auto;
@@ -94,7 +64,7 @@ body{
 }*/
 h1{
     text-align: center;
-    
+    font-size: xx-large;
 }
 h2{
     text-align: center;
@@ -106,21 +76,21 @@ h2#right{
     color: rgb(255, 0, 0);
 }
 div#img{
-    justify-self: justify;  
-    width: 100%;
-    height: 520px;
+    justify-content: center;
+    float: none;
+    width: 80%;
+    height: 510px;
     background-color: rgb(58, 126, 80) ;
 }
 img{
+    justify-content: center;
     border-radius: 16%;
     height: 100%;
 }
 div#esqerd{
     width: 100%;
-    height: 90%;
     
 }
 div#direit{
     width: 100%;
-    
 }
