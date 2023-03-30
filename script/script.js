@@ -1,8 +1,11 @@
 //Variáveis dos elementos
+
+
 const playerDisp = document.querySelectorAll('.playerDisp')
 const playerEsc = document.querySelectorAll('.playerEsc')
 const listEsc = document.getElementById('listEsc')
 const listDisp = document.getElementById('listDisp')
+
 
 //Criação dos botôes
 const createAddBtn = document.createElement('button')
@@ -95,7 +98,9 @@ playerDisp.forEach(player => {
             addElementEsc(playerName)
             movedPlayers.push(playerName)
         }
+        player.parentNode.remove()
         player.remove()
+        
     }
 
     player.addEventListener('mouseenter',()=>{
@@ -119,6 +124,7 @@ playerEsc.forEach(player => {
             addElementDisp(playerName)
             movedPlayers.push(playerName)
         }
+        player.parentNode.remove()
         player.remove()
     }
 
@@ -133,5 +139,6 @@ playerEsc.forEach(player => {
         delBtn.removeEventListener('click', handleDelBtnClick)
     })
 });
+
 
 
